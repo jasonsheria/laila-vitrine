@@ -1019,17 +1019,18 @@ body input[type=range].video::-ms-thumb:active {
 }
 
 .image-fond {
-  background-image: url('./images/vM1pGHgN.png');
+  background-image: url('./images/fond.PNG');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -25.5vw;
-  margin-left: 11vw;
+  margin-top: -6.5vw;
+  margin-left: -37vw;
   position: absolute;
   z-index: 29;
   transition: 1s all;
-  width: 44%;
-  height: 52.9vh;
+  width: 38%;
+  height: 44.9vh;
+  border-radius: 30px;
 }
 
 .mains {

@@ -267,70 +267,11 @@ function App() {
               viewport={{ once: true }}
             >
 
-              <video
-                ref={videoRef}
-                // src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-                onTimeUpdate={handleTimeUpdate}
-                onLoadedMetadata={handleDurationChange}
-                style={{
-                  width: "85%",
-                  height: "100%",
-                  marginTop: "3vw",
-                  marginLeft: "11vw"
-                }}
-              />
+              
               <div
                 style={isPlaying ? container : containers}
                 className='image-fond'>
 
-              </div>
-              <div className="containeres" >
-                <label htmlFor="checkbox" className="first">
-                  <div className="play_pause_icon play"></div>
-                </label>
-                <input type="checkbox" id='checkbox' className="inputs" onClick={handlePlayPause} />
-              </div>
-              <div className="controls">
-                <input
-                  type="range"
-                  min="0"
-                  max={duration}
-                  value={currentTime}
-                  onChange={handleSeek}
-                  // style={"visibility:"setVolumebar}
-
-                  className='video'
-                />
-                <button
-                  onClick={changeVolume}
-                  style={{
-                    background: "transparent",
-                    border: "none",
-                  }}
-                >
-
-
-                  <PiSpeakerHighDuotone
-                    style={{
-                      color: "white",
-                      marginLeft: "22px",
-                      fontSize: "21px",
-                      position: "relative",
-                      top: "-8px",
-                    }} />
-                </button>
-                <input
-                  type="range"
-                  min="0"
-                  max="1"
-                  step="0.1"
-                  value={volume}
-                  onChange={handleVolumeChange}
-                  orient="vertical"
-                  style={volumebar ? container : containers}
-                  className="volume"
-
-                />
               </div>
             </motion.div>
 
